@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ItemMovieCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemMovieCell" rowHeight="214" id="KGk-i7-Jjw" customClass="ItemMovieCell" customModule="MovieTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-avengers" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-EI-fbX">
+                        <rect key="frame" x="20" y="20" width="150" height="174"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rMu-EI-fbX" secondAttribute="height" multiplier="25:29" id="wlP-7H-Mcw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-Eh-vHy">
+                        <rect key="frame" x="190" y="36.333333333333329" width="267" height="141.33333333333337"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spider-Man: Into the Spider-Verse(2020)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zde-co-PW8">
+                                <rect key="frame" x="0.0" y="0.0" width="267" height="40.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1h 57min - Action, Animation, Adventure" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHA-m6-dmo">
+                                <rect key="frame" x="0.0" y="40.666666666666664" width="267" height="15.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.57625241623711343" green="0.57625241623711343" blue="0.57625241623711343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAT-vV-W49">
+                                <rect key="frame" x="0.0" y="56.333333333333343" width="267" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHH-pO-fdZ">
+                                        <rect key="frame" x="0.0" y="30" width="151" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7my-sL-hpv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ON MY WATCH LIST">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnAddWatchListTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FiQ-qx-9NF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="BHH-pO-fdZ" firstAttribute="top" secondItem="rAT-vV-W49" secondAttribute="top" constant="30" id="IR8-vS-kob"/>
+                                    <constraint firstItem="BHH-pO-fdZ" firstAttribute="leading" secondItem="rAT-vV-W49" secondAttribute="leading" id="psx-4z-1Et"/>
+                                    <constraint firstAttribute="bottom" secondItem="BHH-pO-fdZ" secondAttribute="bottom" constant="5" id="rNn-l8-jpu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wOU-Eh-vHy" firstAttribute="leading" secondItem="rMu-EI-fbX" secondAttribute="trailing" constant="20" id="0PP-xR-Ahh"/>
+                    <constraint firstItem="wOU-Eh-vHy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2oE-3j-oMp"/>
+                    <constraint firstItem="wOU-Eh-vHy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="5YW-2s-cT2"/>
+                    <constraint firstAttribute="bottom" secondItem="rMu-EI-fbX" secondAttribute="bottom" constant="20" id="Kpm-Pe-2E2"/>
+                    <constraint firstItem="rMu-EI-fbX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Pzp-6T-f9Z"/>
+                    <constraint firstAttribute="trailing" secondItem="wOU-Eh-vHy" secondAttribute="trailing" constant="20" id="fS4-Au-3o5"/>
+                    <constraint firstItem="rMu-EI-fbX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pz9-eV-PNc"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wOU-Eh-vHy" secondAttribute="bottom" constant="20" id="qm3-DX-W9R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddOnWatchList" destination="BHH-pO-fdZ" id="xW1-a0-a1Y"/>
+                <outlet property="imvMovie" destination="rMu-EI-fbX" id="tWx-ef-n2p"/>
+                <outlet property="lblDetail" destination="sHA-m6-dmo" id="BCU-uA-6s4"/>
+                <outlet property="lblTitle" destination="zde-co-PW8" id="eUU-Gj-ZTH"/>
+                <outlet property="viewWatchList" destination="rAT-vV-W49" id="Yoa-8Y-NBa"/>
+            </connections>
+            <point key="canvasLocation" x="249.61832061068702" y="48.591549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-avengers" width="948" height="1400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
